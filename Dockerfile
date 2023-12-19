@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # 暴露应用程序端口
-EXPOSE 80
+EXPOSE 3000
 
 # 定义启动命令
-CMD ["npm", "start"]
+ENTRYPOINT ["npm", "start"]
